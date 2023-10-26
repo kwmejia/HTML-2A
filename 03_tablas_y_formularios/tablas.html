@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tablas</title>
+
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid #000;
+        border-collapse: collapse;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <a href=".">Volver</a>
+    <center>
+      <h1>Tablas en HTML5</h1>
+    </center>
+
+    <h2>Estructura basica de una tabla</h2>
+
+    <table border="1">
+      <tr>
+        <td>item 1</td>
+        <td>item 2</td>
+        <td>item 3</td>
+        <td>item 4</td>
+        <td>item 5</td>
+      </tr>
+
+      <tr>
+        <td>product</td>
+        <td>product 2</td>
+        <td>product 3</td>
+        <td>product 4</td>
+        <td>product 5</td>
+      </tr>
+    </table>
+
+    <h2>Estructura de una tabla completa</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Ciudad</th>
+          <th>Genero</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Santiago</td>
+          <td>25</td>
+          <td>Medellin</td>
+          <td>Masculino</td>
+        </tr>
+
+        <tr>
+          <td>Maria</td>
+          <td>19</td>
+          <td>Medellin</td>
+          <td>Femenino</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>Total</td>
+          <td colspan="3">2</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <h2>Tabla personalizada</h2>
+    <table>
+      <!-- Cabecera de la tabla -->
+      <thead>
+        <!-- fila 1 cabecera -->
+        <tr>
+          <th>Especie</th>
+          <th>#</th>
+          <th>Imagen</th>
+          <th>Nombre mascota</th>
+          <th>Video</th>
+        </tr>
+      </thead>
+
+      <!-- Cuerpo de la tabla -->
+      <tbody>
+        <tr>
+          <td rowspan="3">Perros</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>
+            <img src="./img/img5.avif" alt="imagen de mascota" height="100" />
+          </td>
+          <td colspan="2">Dobi</td>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>
+            <img src="./img/img6.avif" alt="imagen de mascota" height="100" />
+          </td>
+          <td>Dali</td>
+          <td>
+            <video src="img/video.mp4" controls height="100"></video>
+          </td>
+        </tr>
+      </tbody>
+
+      <!-- Final o pie de página de la tabla -->
+      <tfoot></tfoot>
+    </table>
+  </body>
+</html>
