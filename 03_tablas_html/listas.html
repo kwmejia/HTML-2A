@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listas</title>
+
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href=".">Volver</a>
+    <a href="#lista_anidadas_combinadas">Ver listas anidadas y combinadas</a>
+
+    <header>
+      <center>
+        <h1>Listas en HTML</h1>
+      </center>
+    </header>
+
+    <hr />
+
+    <main>
+      <section>
+        <h2>Listas ordenadas</h2>
+
+        <ol>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li>item 5</li>
+          <li>item 6</li>
+        </ol>
+
+        <h2>Listas no ordenadas</h2>
+
+        <ul>
+          <li>item 1</li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li>item 5</li>
+          <li>item 6</li>
+          <li>item 7</li>
+        </ul>
+
+        <h2>Listas no ordenadas anidadas</h2>
+        <ul>
+          <li>
+            item 1
+            <ul>
+              <li>subitem 1</li>
+              <li>subitem 2</li>
+              <li>subitem 3</li>
+            </ul>
+          </li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li>item 5</li>
+        </ul>
+
+        <h2>Listas ordenadas anidadas</h2>
+
+        <ol>
+          <li>
+            item 1
+            <ol>
+              <li>sub item 1</li>
+              <li>sub item 2</li>
+              <li>sub item 3</li>
+              <li>sub item 4</li>
+            </ol>
+          </li>
+          <li>item 2</li>
+          <li>item 3</li>
+          <li>item 4</li>
+          <li>item 5</li>
+        </ol>
+
+        <h2 id="lista_anidadas_combinadas">Lista anidada combinada</h2>
+        <!-- lista global -->
+        <ol>
+          <!-- primer item de lista -->
+          <li>
+            <ul>
+              <!-- items lista anidada no ordenada -->
+              <li>item 1</li>
+              <li>item 2</li>
+            </ul>
+          </li>
+
+          <!-- segunda lista -->
+          <li>
+            <ol>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
